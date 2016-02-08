@@ -2,7 +2,7 @@
   "name": "trying_gulp-postcss-nunjucks",
   "version": "0.0.1",
   "description": "Me playing with gulp-postcss-nunjucks",
-  "repository": "pieterzoektbaan/trying_gulp-postcss-nunjucks",
+  "repository": "https://github.com/pieterzoektbaan/trying_gulp-postcss-nunjucks.git",
   "author": "Pieter",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,7 @@
   ],
   "devDependencies": {
     "gulp": "^3.9.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5"
   }
 }
