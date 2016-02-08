@@ -1,0 +1,21 @@
+{
+  "name": "trying_gulp-postcss-nunjucks",
+  "version": "0.0.1",
+  "description": "Me playing with gulp-postcss-nunjucks",
+  "repository": "pieterzoektbaan/trying_gulp-postcss-nunjucks",
+  "author": "Pieter",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "gulp",
+    "postcss",
+    "nunjucks"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "require-dir": "^0.3.0"
+  }
+}

@@ -1,0 +1,7 @@
+*.log
+*.pid
+*.seed
+_dump
+_build
+node_modules
+Desktop.ini
