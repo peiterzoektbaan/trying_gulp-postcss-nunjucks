@@ -9,6 +9,6 @@ gulp.task('build', function() {
       'scripts',
       'images'
     ],
-    'nunjucks'
+    'htmltidy'
   );
 });

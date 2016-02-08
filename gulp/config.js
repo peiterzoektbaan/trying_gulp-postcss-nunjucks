@@ -40,6 +40,21 @@ module.exports = {
     dest: developmentAssets + '/img',
     options: {}
   },
+  htmltidy: {
+    src:  build + '/**/*.html',
+    dest: build,
+    options: {
+      doctype: 'html5',
+      hideComments: true,
+      indent: true,
+      clean: true,
+      indentSpaces: 2,
+      wrap: 0,
+      mergeDivs: false,
+      mergeEmphasis: false,
+      mergeSpans: false
+    }
+  },  
   watch: {
     styles:   srcAssets + '/styles/**/*.css',
     scripts:  srcAssets + '/scripts/**/*.js',
