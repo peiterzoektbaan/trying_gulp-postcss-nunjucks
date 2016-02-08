@@ -1,0 +1,49 @@
+{# index.nunjucks #}
+
+{% extends "layout.nunjucks" %}
+
+{# HEAD ================================== #}
+  {% block meta %}
+    {% include "partials/_meta.nunjucks" %}
+  {% endblock %}
+
+  {% block styles %}
+    <link rel="stylesheet" type="text/css" href="{{ csspath }}main.css" />
+    <link rel="canonical" href="{{ sitepath }}" />
+  {% endblock %}
+{# /HEAD ================================= #}
+
+{# CONTENT =============================== #}  
+  {% block header %}
+    {% include "partials/_header.nunjucks" %}
+  {%- endblock %}
+    
+  {% block content %}  
+    <section id="section--hands" class="section" role="region">
+        <div class="section__header">
+            <h1>{{ page.index.content.header }}</h1>
+        </div>
+        <div class="section__content">
+            <p>{{ page.index.content.txt.p1 }}</p>
+            
+            {% for list in page.index.content.lists %}
+                {% import 'macros/_list.nunjucks' as makelist %}
+                {{ makelist.list( list )}}
+            {% endfor %}            
+            
+            <p>{{ page.index.content.txt.p2 }}</p>
+        </div>
+    </section>
+  {%- endblock %}
+{# /CONTENT ============================== #}
+  
+{# FOOTER ================================ #}
+  {% block footer %}  
+    {% include "partials/_footer.nunjucks" %}  
+  {%- endblock %}
+{# /FOOTER =============================== #}
+
+{% block bodyjs %}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>  
+    <script src="{{ jspath }}main.js"></script>
+{% endblock %}

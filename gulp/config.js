@@ -7,8 +7,15 @@ var src               = './app',
 
 module.exports = {
   clean: {
-    development: {
-      src: development
+    src: development
+  },
+  nunjucks: {
+    src:   src,
+    dest:  development,
+    options: {
+        srcTemplates: srcHtml + '/templates',
+        srcPages: srcHtml + '/pages/**/*.+(html|nunjucks)',
+        srcData: srcHtml + '/data/data.json'
     }
   },  
   styles: {
@@ -36,6 +43,7 @@ module.exports = {
   watch: {
     styles:   srcAssets + '/styles/**/*.css',
     scripts:  srcAssets + '/scripts/**/*.js',
-    images:   srcAssets + '/images/**/*' 
-  },  
+    images:   srcAssets + '/images/**/*',
+    html:     srcHtml + '/**/*.+(html|nunjucks|json)'    
+  }
 };

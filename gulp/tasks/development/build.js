@@ -8,6 +8,7 @@ gulp.task('build', function() {
       'styles',
       'scripts',
       'images'
-    ]
+    ],
+    'nunjucks'
   );
 });

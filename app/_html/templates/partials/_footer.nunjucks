@@ -1,0 +1,6 @@
+{# footer.nunjucks #}
+<footer id="footer" role="footer">
+  <div class="footer__content">
+    &nbsp;              
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+{% macro list( listobject = {} ) %}
+
+{%if listobject %}   
+    
+  {%if listobject.type == 'ul' %}
+    <ul class="{{ listobject.class }}">
+  {%elif listobject.type == 'ol' %}
+    <ol class="{{ listobject.class }}">
+  {% endif %}
+
+    {% for item in listobject.items %}
+      <li>{{ item }}</li>
+    {% endfor %} 
+      
+  {%if listobject.type == 'ul' %}
+    </ul>
+  {%elif listobject.type == 'ol' %}
+    </ol>
+  {% endif %}
+  
+{% endif %}  
+  
+{% endmacro %}

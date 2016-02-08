@@ -1,6 +1,6 @@
 var gulp   = require('gulp'),
     del    = require('del'),
-    config = require('../../config').clean.development;
+    config = require('../../config').clean;
 
 /* Delete folders and files */
 gulp.task('clean', function() {
