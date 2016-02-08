@@ -2,7 +2,10 @@
   "name": "trying_gulp-postcss-nunjucks",
   "version": "0.0.1",
   "description": "Me playing with gulp-postcss-nunjucks",
-  "repository": "https://github.com/pieterzoektbaan/trying_gulp-postcss-nunjucks.git",
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/pieterzoektbaan/trying_gulp-postcss-nunjucks.git"
+  },
   "author": "Pieter",
   "license": "MIT",
   "scripts": {
