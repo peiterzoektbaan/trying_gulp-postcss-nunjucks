@@ -112,5 +112,31 @@ module.exports = {
                 collapseWhitespace: true
             }
         }
-    }
+    },
+    // Revisioning
+    revision: {    
+        src: {
+            assets: [
+                productionAssets + '/css/*.css',
+                productionAssets + '/js/*.js',
+                productionAssets + '/img/**/*'
+            ],
+            base: production
+        },
+        dest: {
+            assets: production,
+            manifest: {
+                name: 'rev-manifest.json',
+                path: productionAssets
+            }
+        }
+    },
+    collect: {
+        src: [
+            productionAssets + '/rev-manifest.json',
+            production + '/**/*.{html,xml,txt,json,css,js}',
+            '!' + production + '/feed.xml'
+        ],
+        dest: production
+    },    
 };

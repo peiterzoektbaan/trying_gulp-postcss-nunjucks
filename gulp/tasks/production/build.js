@@ -16,6 +16,8 @@ gulp.task('build:production', function() {
       'optimize:js',
       'optimize:images',
       'optimize:html'
-    ]
+    ],
+    'revision',
+    'rev:collect'
   );
 });
