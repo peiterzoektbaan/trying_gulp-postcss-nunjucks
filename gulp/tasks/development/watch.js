@@ -1,6 +1,9 @@
-var gulp = require('gulp');
+var gulp   = require('gulp'),
+    config = require('../../config').watch;
 
-/* Watch files for changes */
+/* Start browsersync task and then watch files for changes */
 gulp.task('watch', ['build'], function() {
-
+  gulp.watch(config.styles, ['styles']);
+  gulp.watch(config.scripts, ['scripts']);
+  gulp.watch(config.images, ['images']);
 });

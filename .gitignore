@@ -2,6 +2,6 @@
 *.pid
 *.seed
 _dump
-_build
+build
 node_modules
 Desktop.ini

@@ -14,7 +14,14 @@ module.exports = {
   styles: {
     src:  srcAssets + '/styles/*.css',
     dest: developmentAssets + '/css',
-    options: {}
+    options: {
+      precss: {},
+      autoprefixer: {
+        browsers: ['last 3 versions'],
+        cascade: true
+      },
+      mqpacker: {}      
+    }
   },
   scripts: {
     src:  srcAssets + '/scripts/*.js',
@@ -25,5 +32,10 @@ module.exports = {
     src:  srcAssets + '/images/**/*',
     dest: developmentAssets + '/img',
     options: {}
-  }
+  },
+  watch: {
+    styles:   srcAssets + '/styles/**/*.css',
+    scripts:  srcAssets + '/scripts/**/*.js',
+    images:   srcAssets + '/images/**/*' 
+  },  
 };
