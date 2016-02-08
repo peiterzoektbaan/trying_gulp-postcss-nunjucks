@@ -23,6 +23,8 @@ module.exports = {
     dest: developmentAssets + '/css',
     options: {
       precss: {},
+      cssnext: {},
+      color: {},
       autoprefixer: {
         browsers: ['last 3 versions'],
         cascade: true

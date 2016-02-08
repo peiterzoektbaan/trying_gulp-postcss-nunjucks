@@ -14,8 +14,8 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucksRender({
       env: 'development',
       config: {
-        url:      'http://localhost:9999',
-        basepath: '/',
+        url:      '',
+        basepath: '',
         jspath:   'assets/js/',
         csspath:  'assets/css/',
         imgpath:  'assets/img/'

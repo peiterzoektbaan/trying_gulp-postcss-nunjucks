@@ -3,6 +3,8 @@ var gulp         = require('gulp'),
     plumber      = require('gulp-plumber'),    
     postcss      = require('gulp-postcss'),
     precss       = require('precss'),
+    cssnext      = require('postcss-cssnext'),
+    color        = require('postcss-color-function'),
     autoprefixer = require('autoprefixer'),
     mqpacker     = require('css-mqpacker'),
     config       = require('../../config').styles;
@@ -16,6 +18,8 @@ function onError (err) {
 /* Run CSS through PostCSS and it's plugins */
 var processors = [
   precss(config.options.precss),
+  cssnext(config.options.cssnext),
+  color(config.options.color),
   autoprefixer(config.options.autoprefixer),
   mqpacker(config.options.mqpacker)
 ];
