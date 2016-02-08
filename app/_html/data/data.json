@@ -9,22 +9,28 @@
   "page": {
     "index": {
       "url": "index.html",
-      "title": "Title ipsum dolor",
+      "title": "My Gulp/Postcss/Nunjucks Testpage",
       "content": {
-        "header": "Head ipsum dolor",
-        "txt": {
-            "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec massa eu mauris pretium consectetur. Phasellus sapien risus, blandit eget fermentum vitae, efficitur vel lacus. Cras lobortis augue nec elementum luctus. Maecenas ac gravida leo. Cras eu ullamcorper lectus, eu vulputate eros.",
-            "p2": "Aliquam leo sem, placerat non aliquet nec, porta eu dui. Nam nisi massa, pretium id lacus in, auctor dictum libero. Suspendisse in urna nibh. Fusce volutpat diam lorem, at tristique velit auctor a. Mauris eget elit in nisl eleifend ornare ut eget massa."
-        },
-        "lists": [{
-            "type": "ul",
-            "class": "list",
-            "items": [
-                "Consectetur",
-                "Nam nisi massa",
-                "Aliquam leo"
-            ]
-        }]        
+        "quotes": [
+            {
+                "txt": "I avoid that bleak first hour of the working day during which my still sluggish senses and body make every chore a penance. I find that in arriving later, the work which I do perform is of a much higher quality.",
+                "author": "Ignatius J. Reilly"
+            },{
+                "txt": "[…] death, destruction, anarchy, progress, ambition, and self-improvement were to be Piers' new fate. And a vicious fate it was to be: now he was faced with the perversion of having to GO TO WORK.",
+                "author": "Ignatius J. Reilly"
+            }
+        ],
+        "lists": [
+            {
+                "type": "ul",
+                "class": "list",
+                "items": [
+                    "Gulp",
+                    "PostCSS",
+                    "Nunjucks"
+                ]
+            }
+        ]        
       }
     }
   }

@@ -1,4 +1,4 @@
 {# header.nunjucks #}
-  <header id="header" role="header">    
-    &nbsp; 
-  </header>   
+<header id="header" role="header">    
+    <h1>{{ page.index.title }}</h1> 
+</header>   

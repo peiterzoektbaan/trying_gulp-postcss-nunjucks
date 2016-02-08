@@ -1,6 +1,9 @@
 {# footer.nunjucks #}
 <footer id="footer" role="footer">
-  <div class="footer__content">
-    &nbsp;              
-  </div>
+    <div class="footer__content">
+        {% for list in page.index.content.lists %}
+            {% import 'macros/_list.nunjucks' as makelist %}
+            {{ makelist.list( list )}}
+        {% endfor %}      
+    </div>
 </footer>

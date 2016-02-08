@@ -19,21 +19,23 @@
   {%- endblock %}
     
   {% block content %}  
-    <section id="section--hands" class="section" role="region">
-        <div class="section__header">
-            <h1>{{ page.index.content.header }}</h1>
-        </div>
-        <div class="section__content">
-            <p>{{ page.index.content.txt.p1 }}</p>
-            
-            {% for list in page.index.content.lists %}
-                {% import 'macros/_list.nunjucks' as makelist %}
-                {{ makelist.list( list )}}
-            {% endfor %}            
-            
-            <p>{{ page.index.content.txt.p2 }}</p>
-        </div>
-    </section>
+    <div id="content">
+        <section class="section" role="region">
+            <div class="section__header">
+                {% if page.index.content.header %}
+                    <h1>{{ page.index.content.header }}</h1>
+                {% endif %}
+            </div>
+            <div class="section__content">            
+                {% for quote in page.index.content.quotes %}
+                    <blockquote>
+                        {{ quote.txt }}
+                        <cite>{{ quote.author }}</cite>
+                    </blockquote>                
+                {% endfor %}                            
+            </div>
+        </section>
+    </div>
   {%- endblock %}
 {# /CONTENT ============================== #}
   
