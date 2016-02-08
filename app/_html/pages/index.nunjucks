@@ -8,7 +8,7 @@
   {% endblock %}
 
   {% block styles %}
-    <link rel="stylesheet" type="text/css" href="{{ csspath }}main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ csspath }}main{%if env == 'production' %}.min{% endif %}.css" />
     <link rel="canonical" href="{{ sitepath }}" />
   {% endblock %}
 {# /HEAD ================================= #}
@@ -45,5 +45,5 @@
 
 {% block bodyjs %}
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>  
-    <script src="{{ jspath }}main.js"></script>
+    <script src="{{ jspath }}main{%if env == 'production' %}.min{% endif %}.js"></script>
 {% endblock %}
