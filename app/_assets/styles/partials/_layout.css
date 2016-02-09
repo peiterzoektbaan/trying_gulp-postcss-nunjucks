@@ -17,44 +17,378 @@ html {
   background-color: $background-color;
   animation: 300s colors infinite;
 }
-body {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.25) 100%);
-}
 
-#header {
+
+
+
+
+
+.wrapper {
+    font-size: 1.1vw;
+    background: url(../img/bg_blank-light.jpg) fixed;
+    background-size: 100% 100%;
+    background-position: fixed;
+}
+/* =====================
+Main
+===================== */
+.section {
+    padding: 0;
+    margin-bottom: 0;
+    background: url(../img/bg_blank-dark.jpg) fixed;
+    background-size: 100% 100%;
+    /* box-shadow: 0 .25rem .5rem 0 hsla(0,0%,10%,.25); */
+    border-top: 1px solid hsla(60,2%,21%,.35);
+}
+.section__header {
+    display: block;
+    position: relative;
     box-sizing: border-box;
-    padding: 20px 20px;
-    background-color: color(hsl(0,0%,0%) a(50%));
+    height: auto;
+    width: 100%;
+    padding-top: 14vh;
+    background: hsla(200,50%,50%,.25);
+  
     h1 {
         margin: 0;
-        color: #fff;
+        padding: 0 1.5rem;
+        font-size: 5em;
+        color: hsl(60, 2%, 21%);
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        border-bottom: .25em solid #363634;
     }
 }
-#content {
+.section__content {
     display: table;
-    height: 60vh;
+    position: relative;
     box-sizing: border-box;
-    padding: 0 40px;
-    background-color: color(hsl(0,0%,100%) a(85%));
-    section {
-        display: table-cell;
-        height: 100%;
-        vertical-align: middle;
-    }
+    width: 100%;
+    height: 100%;  
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding: 3em 0 5em 0; 
+    box-shadow: 0 .25rem .5rem 0 hsla(0,0%,10%,.25);    
 }
+.section__content__wrapper {
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+    width: inherit;
+    vertical-align: top;
+}
+.section__footer {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    height: 0;
+    width: 100%;
+}
+
+
+
+
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    transition: all 400ms ease-in-out;
+}
+nav {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+}
+nav a[href="#section--cover"] {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 10;
+  visibility: hidden;
+  text-decoration: none;  
+}
+
+nav ul {
+  display: table;
+  height: 100%;
+  width: auto;
+  margin: 0 0 0 auto;
+  padding: 0 .5rem;
+}
+nav li {
+  display: table-cell;
+  height: inherit;
+  padding: 0;
+  vertical-align: middle;
+}
+nav li a,
+nav li a:hover,
+nav li a:visited,
+nav li a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+nav li a {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 .25rem;
+
+  border-radius: 0 100% 100% 100%;
+  transform: rotate(45deg); 
+  transition: background 300ms, transform 550ms ease-out;
+}
+nav li a:hover {
+  outline: 0;
+  transform: rotate(225deg);
+  transition: background 300ms, transform 300ms ease-in;
+}
+nav li a.active {
+  outline: 0;
+  transform: rotate(-135deg);
+  transition: background 300ms, transform 400ms ease-in;
+}
+nav li a { background-color: hsla(150,2%,20%, .8) }
+nav li a:hover  { background-color: hsla(150,2%,20%, .5) }
+nav li a.active { background-color: hsla(178, 33%, 50%, .8)}
+ 
+
+/* =====================
+Pitch
+===================== */
+#section--pitch  {
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: #000 0 0 1rem 0;  
+  /* background: linear-gradient(hsla(150,2%,0%, .95), hsla(150,2%,10%, .8)), url(../img/bg/polygon.png); */
+  background: url(../img/bg/blank03.jpg) center center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  
+  .section__content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+    font-size: 1.6em;
+    background: linear-gradient(hsla(150,2%,0%, .85), hsla(150,2%,10%, .82)), url(../img/bg_cover01.jpg) center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;    
+  }
+  .section__content__wrapper {
+    vertical-align: middle;
+  }
+}
+
+#section--pitch .content__head {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: hsl(0,90%,100%);
+  
+    font-weight: 700;
+    font-size: 2.6em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    
+  
+  span {
+    white-space: normal;
+  }
+  .experience {
+    margin-bottom: .25em;
+    
+    i {
+      font-family: 'Amatic SC', cursive;
+    }
+  }
+  .design {
+    color: #858885;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
+    font-family: 'Amatic SC', cursive;
+  }
+}
+ 
+/* =====================
+Head
+===================== */
+#section--head {
+  background: url(../img/bg_brain01.jpg);
+  background-position: center center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+
+  .section__header {
+      background: hsla(200,50%,50%,.25);    
+  }
+  .content__head {
+      color: hsl(178, 58%, 26%);
+  }    
+}
+
+/* =====================
+Heart
+===================== */
+#section--heart {
+  background: url(../img/bg_heart01.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+  .section__header {
+      background: hsla(10,50%,50%,.25);    
+  }
+  .content__head {
+      color: hsl(38, 58%, 26%);
+  }    
+}
+
+/* =====================
+Hands
+===================== */
+#section--hands {
+  background: url(../img/bg_hand01.jpg);
+  background-position: center center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+ 
+  .section__header {
+      background: hsla(150,50%,50%,.25);    
+  }
+  .content__head {
+      color: hsl(148, 58%, 26%);
+  }   
+}
+
+.section__content {
+  background: linear-gradient(135deg, hsla(60,30%,90%,.8) 20%, hsla(0,0%,100%,.97));
+} 
+
+/* =====================
+Quotes
+===================== */
+#section--quote,
+#section--contact {
+  background: url(../img/bg_ear01.jpg);
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  .section__content {
+      padding-left: 5em;
+      padding-right: 5em;
+      background: linear-gradient(135deg, hsla(60,30%,90%,.9) 20%, hsla(0,0%,100%,.9));
+  }
+  .content__row {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+  }
+}
+
+
+#section--quote { 
+  .section__header {
+      background: hsla(260,50%,50%,.25);    
+  }
+  blockquote:before {
+    color: hsl(339, 15%, 65%);
+  }
+}
+#section--contact { 
+  .section__header {
+      background: hsla(30,50%,50%,.25);    
+  }  
+}
+
+/* =====================
+Content
+===================== */
+.content__row {
+  padding: 1em 1.5em 1em 2.5em;
+  margin: 0 0 1.5em 15vw;
+  /* background: linear-gradient(135deg, hsla(0,0%,100%,.75) 20%, hsla(0,0%,100%,.5));
+  box-shadow: 5px 5px 8px hsla(0,0%,10%,.2);
+  transition: all 0.1s linear; */
+
+  /* .active & {
+    background: linear-gradient(135deg, hsla(0,0%,95%,.65) 20%, hsla(0,0%,90%,.85));
+    box-shadow: 8px 8px 16px hsla(0,0%,10%,.2);
+    transform: translate3d(-1.5rem,-0.5rem,0);
+  } */
+}
+
+.content__head {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3.6em;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.5rem 0;
+  color: hsl(178, 58%, 26%);
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+.content__text,
+.content__list {
+  font-size: 1.4em;
+  margin: 0 0 1.5em 0;
+  padding: 0;  
+  letter-spacing: 0.1em;
+  color: hsl(150, 2%, 20%);
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+.content__list {
+  font-size: 1.6em;
+  list-style-type: none;  
+}
+.content__list li {
+  display: block;
+  margin: .15em;  
+  padding: 0 .1em; 
+}
+.content__list--inline {
+  margin-bottom: .1em;
+}
+.content__list--inline li {
+  display: inline-block;
+  white-space: nowrap;
+}
+.content__list--padded {
+  margin-bottom: 1.3em;
+}
+
+
 
 blockquote {
     display: block;
     position: relative;    
     padding: 15px 20px 15px 45px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
     color: #666;        
     font-family: Georgia, serif;
     font-size: 16px;
     line-height: 1.2;
     text-align: justify;
-    background: #fff;    
-    border-left: 15px solid hsl(0,0%,75%);
+    /*background: #fff;    
+    border-left: 15px solid hsl(0,0%,75%);*/
 
     &:before {
         content: "\201C";

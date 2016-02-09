@@ -1,0 +1,24 @@
+{# section--stack.nunjucks #}
+
+<section id="section--pitch" role="region">
+  <div class="section__content">
+    <div class="section__content__wrapper">
+      <div class="g">
+        <div class="u-1">
+          <h1 class="content__head is-left">
+            <span class="design no-wrap">Ervaren</span>   
+            <span class="web no-wrap">All-round Web Developer</span>
+            <span class="design no-wrap">Gepassioneerd</span>               
+            <span class="experience no-wrap">Creatief denker</span>
+            <span class="design no-wrap">Pragmatisch</span>               
+            <span class="experience no-wrap">UX evangelist</span>
+            <span class="design no-wrap">No-nonsense</span>
+            <span class="web no-wrap">Ideen maker</span>
+            <span class="design no-wrap">met een vleugje</span>
+            <span class="web no-wrap">Piraat...!</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

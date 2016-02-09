@@ -1,0 +1,37 @@
+{# section--heart.nunjucks #}
+
+<section id="section--heart" class="section" role="region">
+  <div class="section__header">
+     <h1>{{ page.index.content.heart.header }}</h1>
+  </div>
+  <div class="section__content">
+    <div class="section__content__wrapper">
+      <div class="g">
+        <div class="content__content">
+          {% for block in page.index.content.heart.blocks %}
+            <div class="g content__row">
+              <div class="table--cell">
+                <h2 class="content__head">
+                  {{ block.header }}
+                </h2>
+                {% if block.txtpre %}
+                  <p class="content__text">{{ block.txtpre }}</p>
+                {% endif %}
+                {% for list in block.lists %}
+                    {% import 'macros/_list.nunjucks' as makelist %}
+                    {{ makelist.list( list )}}
+                {% endfor %}
+                {% if block.txtpost %}
+                  <p class="content__text">{{ block.txtpost }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section__footer">
+    &nbsp;
+  </div>
+</section>

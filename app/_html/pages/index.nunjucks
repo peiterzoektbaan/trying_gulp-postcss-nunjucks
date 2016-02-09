@@ -8,6 +8,8 @@
   {% endblock %}
 
   {% block styles %}
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" />  
     <link rel="stylesheet" type="text/css" href="{{ csspath }}main{%if env == 'production' %}.min{% endif %}.css" />
     <link rel="canonical" href="{{ sitepath }}" />
   {% endblock %}
@@ -19,23 +21,11 @@
   {%- endblock %}
     
   {% block content %}  
-    <div id="content">
-        <section class="section" role="region">
-            <div class="section__header">
-                {% if page.index.content.header %}
-                    <h1>{{ page.index.content.header }}</h1>
-                {% endif %}
-            </div>
-            <div class="section__content">            
-                {% for quote in page.index.content.quotes %}
-                    <blockquote>
-                        {{ quote.txt }}
-                        <cite>{{ quote.author }}</cite>
-                    </blockquote>                
-                {% endfor %}                            
-            </div>
-        </section>
-    </div>
+    {% include "partials/_section-head.nunjucks" %}  
+    {% include "partials/_section-heart.nunjucks" %}
+    {% include "partials/_section-hands.nunjucks" %}
+    {% include "partials/_section-quote.nunjucks" %}
+    {% include "partials/_section-contact.nunjucks" %}
   {%- endblock %}
 {# /CONTENT ============================== #}
   

@@ -1,0 +1,28 @@
+{# section--quote.nunjucks #}
+
+<section id="section--quote" class="section" role="region">
+  <div class="section__header">
+     <h1>{{ page.index.content.inspirational.header }}</h1>
+  </div>
+  <div class="section__content">
+    <div class="section__content__wrapper">
+      <div class="g">
+        <div class="content__content">
+          <div class="g content__row">
+            <div class="table--cell">
+             {% for quote in page.index.content.inspirational.quotes %}
+                <blockquote>
+                  {{ quote.quote }}
+                  <cite>{{ quote.author }}</cite>
+                </blockquote>                
+              {% endfor %}    
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="section__footer">
+    &nbsp;
+  </div>
+</section>

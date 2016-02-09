@@ -1,0 +1,33 @@
+{# section--contact.nunjucks #}
+
+<section id="section--contact" class="section" role="region">
+  <div class="section__header">
+     <h1>{{ page.index.content.contact.header }}</h1>
+  </div>
+  <div class="section__content">
+    <div class="section__content__wrapper">
+      <div class="g">
+        <div class="content__content">
+          <div class="g content__row">
+            <div class="table--cell">
+             <p class="content__text text-1 is-center">
+                In verband met het vinden van een baan ben ik momenteel niet actief zoekende.
+              </p>
+              <p class="content__text text-2 is-center small">
+                Dit neemt echter niet weg dat er ruimte is voor interessante voorstellen en aanbiedingen...<br />
+                <span class="smaller">bij voorkeur in Eindhoven of omgeving.</span>
+              </p>
+              <p class="content__text text-3 is-center">
+                <a class="link link--fancyhover" href="CV_PieterZoektBaan.pdf" ref="nofollow" target="_blank" data-letters="bekijk curriculum vitae">bekijk curriculum vitae</a>
+                <span>-of-</span>
+                <a class="link link--fancyhover" href="&#109;a&#105;l&#116;&#111;:&#112;&#105;&#101;&#116;&#101;&#114;&#64;&#112;&#105;&#101;&#116;&#101;&#114;&#122;&#111;&#101;&#107;&#116;&#98;&#97;&#97;&#110;&#46;&#110;&#108;?Subject=Vacature" ref="nofollow" data-letters="mail een vacature">mail een vacature</a>
+              </p>   
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="section__footer">
+    &nbsp;
+  </div>

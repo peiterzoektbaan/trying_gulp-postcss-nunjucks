@@ -9,28 +9,191 @@
   "page": {
     "index": {
       "url": "index.html",
-      "title": "My Gulp/Postcss/Nunjucks Testpage",
+      "title": "Lorem Ipsum Desc",
       "content": {
-        "quotes": [
+        "head": {
+          "header": "Head",
+          "blocks": [
             {
-                "txt": "I avoid that bleak first hour of the working day during which my still sluggish senses and body make every chore a penance. I find that in arriving later, the work which I do perform is of a much higher quality.",
-                "author": "Ignatius J. Reilly"
-            },{
-                "txt": "[…] death, destruction, anarchy, progress, ambition, and self-improvement were to be Piers' new fate. And a vicious fate it was to be: now he was faced with the perversion of having to GO TO WORK.",
-                "author": "Ignatius J. Reilly"
-            }
-        ],
-        "lists": [
+              "header": "Bachelor Applied Science",
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "IQ :", 
+                    "122"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Werkgeheugen :",
+                    "124"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Leergierig",
+                    "Technisch",
+                    "Open"
+                  ]
+                }
+              ]
+            },
             {
-                "type": "ul",
-                "class": "list",
-                "items": [
-                    "Gulp",
-                    "PostCSS",
-                    "Nunjucks"
-                ]
+              "header": "Motivators",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Creativiteit",
+                    "Innovatie", 
+                    "Afwisseling"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Groeien", 
+                    "Helpen", 
+                    "Brainstormen", 
+                    "Adviseren"
+                  ]
+                }
+              ]
             }
-        ]        
+          ]
+        },
+        "heart": {
+          "header": "Heart",
+          "blocks": [
+            {
+              "header": "INFP",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Type :",
+                    "Introvert",
+                    "Intuition",
+                    "Feeling",
+                    "Perceiving"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Variant :",
+                    "Assertief"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Rol :",
+                    "Idealist",
+                    "Bemiddelaar",
+                    "Heler"
+                  ]
+                }
+              ],
+              "txtpost": "Continu bezig met het op waarde schatten van gebeurtenissen, ervaringen en mensen. ~ Bepaalt prioriteiten aan de hand van de waarden die wordt toekent. ~ Wordt gedreven door persoonlijke waarden en doet niet snel iets wat hiermee in strijd is. ~ Haalt energie uit het scheppen van nieuwe mogelijkheden. ~ Kijkt verder dan de huidige situatie en is bereid nieuwe wegen in te slaan. ~ Bezit een onverzadigbare nieuwsgierigheid en 360-gradenperspectief op situaties en gebeurtenissen. ~ Verzamelt continue informatie uit zijn omgeving. En heeft een scherp geheugen voor gebeurtenissen en ervaringen die belangrijk zijn (geweest). ~ Is in staat grote hoeveelheden complexe informatie te verwerken, tot de essentie terug te brengen en te conserveren. ~ Heeft zicht op welke stappen in welke volgorde gezet moeten worden om een bepaald doel te bereiken."
+            }
+          ]
+        },
+        "hands": {
+          "header": "Hands",
+          "blocks": [
+            {
+              "header": "$devStack",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "HTML5/CSS3",
+                    "Javascript/jQuery",
+                    "Sass/Less/Stylus"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "KnockoutJS/React",
+                    "Node/npm, Gulp/Webmake",
+                    ".NET, JAVA, PHP"                    
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Visual Studio/Netbeans/Eclipse",
+                    "SVN/Git/Team Foundation",
+                    "Photoshop/Illustrator"
+                  ]
+                }
+              ]
+            },
+            {
+              "header": "Hobbies",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Tekenen",
+                    "Boeken lezen",
+                    "Dingen bouwen"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Films",
+                    "Series",
+                    "Documantaires"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Schietsport",
+                    "Krav Maga"                    
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "contact": {
+          "header": "Contact"
+        },
+        "inspirational": {
+          "header": "Inspirational quotes",
+          "quotes": [
+            {
+              "quote": "I avoid that bleak first hour of the working day during which my still sluggish senses and body make every chore a penance. I find that in arriving later, the work which I do perform is of a much higher quality.",
+              "author": "Ignatius J. Reilly"
+            },
+            {
+              "quote": "[…] death, destruction, anarchy, progress, ambition, and self-improvement were to be Piers' new fate. And a vicious fate it was to be: now he was faced with the perversion of having to GO TO WORK.",
+              "author": "Ignatius J. Reilly"
+            }
+          ]
+        }
       }
     }
   }

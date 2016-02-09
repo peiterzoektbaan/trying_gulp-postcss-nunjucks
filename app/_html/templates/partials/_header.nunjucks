@@ -1,4 +1,14 @@
 {# header.nunjucks #}
-<header id="header" role="header">    
-    <h1>{{ page.index.title }}</h1> 
-</header>   
+
+  {% include "partials/_section-pitch.nunjucks" %}
+
+  <header id="header" role="header">    
+    <nav>
+      <ul>
+        <li><a href="#section--head" rel="section--head">&nbsp;</a></li>
+        <li><a href="#section--heart" rel="section--heart">&nbsp;</a></li>          
+        <li><a href="#section--hands" rel="section--hands">&nbsp;</a></li>
+        <li><a href="#section--contact" rel="section--contact">&nbsp;</a></li>
+      </ul>
+    </nav>    
+  </header>   
