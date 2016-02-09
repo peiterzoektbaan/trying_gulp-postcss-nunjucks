@@ -2,15 +2,18 @@
 Head
 ===================== */
 #section--head {
-  background: url(../img/bg_brain01.jpg);
+  background: $head-bg-img;
   background-position: center center;
   background-size: 110%;
   background-repeat: no-repeat;
 
   .section__header {
-      background: hsla(200,50%,50%,.25);    
+      background: $head-head-bg;    
   }
+  .section__content {
+    background: $head-content-bg;
+  }   
   .content__head {
-      color: hsl(178, 58%, 26%);
+      color: $head-head-color;
   }    
 }

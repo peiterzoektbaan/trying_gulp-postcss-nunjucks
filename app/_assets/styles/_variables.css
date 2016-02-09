@@ -1,0 +1,52 @@
+/* Variables */
+$background-color:    #7db9e8;
+
+$header-color:        hsl(178, 58%, 26%);
+$header-color-dark:   hsl(60, 2%, 21%);
+$header-font:         'Oswald', sans-serif;
+$header-font-alt:     'Amatic SC', cursive;
+
+$txt-color:           hsl(150, 2%, 20%);
+$txt-font:            'IM Fell DW Pica SC', serif;
+
+$html-bg-img:         url(../img/bg_blank-light.jpg);
+$section-bg-img:      url(../img/bg_blank-dark.jpg);
+
+$font-size-sm:        1.4em;
+$font-size-md:        1.6em;
+$font-size-lg:        3.6em;
+$font-size-xl:        5.0em;
+
+
+/* Section variables - pitch */
+$pitch-bg-color:      linear-gradient(hsla(150,2%,0%, .85), hsla(150,2%,10%, .82));
+$pitch-bg-img:        url(../img/bg_cover01.jpg);
+
+/* Section variables - head */
+$head-bg-img:         url(../img/bg_brain01.jpg);
+$head-head-bg:        hsla(200,50%,50%,.25);
+$head-head-color:     hsl(178, 58%, 26%);  
+$head-content-bg:     linear-gradient(135deg, hsla(60,30%,90%,.8) 20%, hsla(0,0%,100%,.97));
+
+/* Section variables - heart */
+$heart-bg-img:         url(../img/bg_heart01.jpg);
+$heart-head-bg:        hsla(10,50%,50%,.25);
+$heart-head-color:     hsl(38, 58%, 26%);
+$heart-content-bg:     linear-gradient(135deg, hsla(60,30%,90%,.8) 20%, hsla(0,0%,100%,.97));
+
+/* Section variables - hands */
+$hands-bg-img:         url(../img/bg_hand01.jpg);
+$hands-head-bg:        hsla(150,50%,50%,.25);
+$hands-head-color:     hsl(148, 58%, 26%);  
+$hands-content-bg:     linear-gradient(135deg, hsla(60,30%,90%,.8) 20%, hsla(0,0%,100%,.97));
+
+/* Section variables - quotes */
+$quotes-bg-img:        url(../img/bg_ear01.jpg);
+$quotes-head-color:    hsla(260,50%,50%,.25);  
+$quotes-content-bg:    linear-gradient(135deg, hsla(60,30%,90%,.9) 20%, hsla(0,0%,100%,.9));
+
+/* Section variables - contact */
+$contact-bg-img:       url(../img/bg_ear01.jpg);
+$contact-head-color:   hsla(260,50%,50%,.25);  
+$contact-content-bg:   linear-gradient(135deg, hsla(60,30%,90%,.9) 20%, hsla(0,0%,100%,.9));
+

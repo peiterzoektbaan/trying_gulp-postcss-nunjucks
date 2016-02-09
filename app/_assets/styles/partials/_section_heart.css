@@ -2,15 +2,18 @@
 Heart
 ===================== */
 #section--heart {
-  background: url(../img/bg_heart01.jpg);
+  background: $heart-bg-img;
   background-position: center center;
   background-size: 100%;
   background-repeat: no-repeat;
  
   .section__header {
-      background: hsla(10,50%,50%,.25);    
+      background: $heart-head-bg;    
   }
-  .content__head {
-      color: hsl(38, 58%, 26%);
+  .section__content {
+    background: $heart-content-bg;
   }    
+  .content__head {
+      color: $heart-head-color;
+  }
 }

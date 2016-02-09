@@ -1,0 +1,24 @@
+/* =====================
+Contact
+===================== */
+#section--contact {
+  background: $contact-bg-img;
+  background-position: bottom center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  .section__header {
+      background: $quotes-head-color;    
+  }  
+  .section__content {
+      padding-left: 5em;
+      padding-right: 5em;
+      background: $contact-content-bg;
+  }
+  .content__row {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+  }
+}

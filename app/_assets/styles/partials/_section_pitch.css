@@ -7,16 +7,14 @@ Pitch
   margin-bottom: 1.5rem;
   box-shadow: #000 0 0 1rem 0;  
   /* background: linear-gradient(hsla(150,2%,0%, .95), hsla(150,2%,10%, .8)), url(../img/bg/polygon.png); */
-  background: url(../img/bg/blank03.jpg) center center;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
   
   .section__content {
     margin: 0;
     padding: 0;
     height: 100vh;  
     font-size: 1.6em;
-    background: linear-gradient(hsla(150,2%,0%, .85), hsla(150,2%,10%, .82)), url(../img/bg_cover01.jpg) center center;
+    background: $pitch-bg-color, $pitch-bg-img;
+    background-position: center center;
     background-size: 100% auto;
     background-repeat: no-repeat;    
   }
@@ -36,7 +34,7 @@ Pitch
     line-height: 1em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: $header-font;
     
   
   span {
@@ -46,7 +44,7 @@ Pitch
     margin-bottom: .25em;
     
     i {
-      font-family: 'Amatic SC', cursive;
+      font-family: $header-font-alt;
     }
   }
   .design {
@@ -54,6 +52,6 @@ Pitch
     font-size: 1.1em;
     font-weight: 400;
     line-height: 1em;
-    font-family: 'Amatic SC', cursive;
+    font-family: $header-font-alt;
   }
 }

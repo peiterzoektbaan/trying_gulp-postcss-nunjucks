@@ -1,17 +1,19 @@
 /* =====================
 Quotes
 ===================== */
-#section--quote,
-#section--contact {
-  background: url(../img/bg_ear01.jpg);
+#section--quote {
+  background: $quotes-bg-img;
   background-position: bottom center;
   background-size: 100% auto;
   background-repeat: no-repeat;
 
+  .section__header {
+      background: $quotes-head-color;    
+  }  
   .section__content {
       padding-left: 5em;
       padding-right: 5em;
-      background: linear-gradient(135deg, hsla(60,30%,90%,.9) 20%, hsla(0,0%,100%,.9));
+      background: $quotes-content-bg;
   }
   .content__row {
     margin: 0;
@@ -21,17 +23,8 @@ Quotes
   }
 }
 
-
 #section--quote { 
-  .section__header {
-      background: hsla(260,50%,50%,.25);    
-  }
   blockquote:before {
     color: hsl(339, 15%, 65%);
   }
-}
-#section--contact { 
-  .section__header {
-      background: hsla(30,50%,50%,.25);    
-  }  
 }

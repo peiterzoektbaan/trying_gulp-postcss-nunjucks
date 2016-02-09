@@ -2,19 +2,18 @@
 Hands
 ===================== */
 #section--hands {
-  background: url(../img/bg_hand01.jpg);
+  background: $hands-bg-img;
   background-position: center center;
-  background-size: 110%;
+  background-size: 100%;
   background-repeat: no-repeat;
  
   .section__header {
-      background: hsla(150,50%,50%,.25);    
+      background: $hands-head-bg;    
   }
+  .section__content {
+    background: $hands-content-bg;
+  }   
   .content__head {
-      color: hsl(148, 58%, 26%);
+      color: $hands-head-color;
   }   
 }
-
-.section__content {
-  background: linear-gradient(135deg, hsla(60,30%,90%,.8) 20%, hsla(0,0%,100%,.97));
-} 
