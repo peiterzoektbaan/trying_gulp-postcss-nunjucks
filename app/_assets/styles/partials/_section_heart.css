@@ -1,0 +1,16 @@
+/* =====================
+Heart
+===================== */
+#section--heart {
+  background: url(../img/bg_heart01.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+  .section__header {
+      background: hsla(10,50%,50%,.25);    
+  }
+  .content__head {
+      color: hsl(38, 58%, 26%);
+  }    
+}

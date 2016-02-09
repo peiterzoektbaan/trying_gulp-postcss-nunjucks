@@ -1,0 +1,78 @@
+/* =====================
+Nav
+===================== */
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    transition: all 400ms ease-in-out;
+}
+nav {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  margin: 0 auto;
+}
+nav a[href="#section--cover"] {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 10;
+  visibility: hidden;
+  text-decoration: none;  
+}
+
+nav ul {
+  display: table;
+  height: 100%;
+  width: auto;
+  margin: 0 0 0 auto;
+  padding: 0 .5rem;
+}
+nav li {
+  display: table-cell;
+  height: inherit;
+  padding: 0;
+  vertical-align: middle;
+}
+nav li a,
+nav li a:hover,
+nav li a:visited,
+nav li a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+nav li a {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 .25rem;
+
+  border-radius: 0 100% 100% 100%;
+  transform: rotate(45deg); 
+  transition: background 300ms, transform 550ms ease-out;
+}
+nav li a:hover {
+  outline: 0;
+  transform: rotate(225deg);
+  transition: background 300ms, transform 300ms ease-in;
+}
+nav li a.active {
+  outline: 0;
+  transform: rotate(-135deg);
+  transition: background 300ms, transform 400ms ease-in;
+}
+nav li a { background-color: hsla(150,2%,20%, .8) }
+nav li a:hover  { background-color: hsla(150,2%,20%, .5) }
+nav li a.active { background-color: hsla(178, 33%, 50%, .8)}
+ 

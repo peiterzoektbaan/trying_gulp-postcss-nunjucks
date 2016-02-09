@@ -1,0 +1,16 @@
+/* =====================
+Head
+===================== */
+#section--head {
+  background: url(../img/bg_brain01.jpg);
+  background-position: center center;
+  background-size: 110%;
+  background-repeat: no-repeat;
+
+  .section__header {
+      background: hsla(200,50%,50%,.25);    
+  }
+  .content__head {
+      color: hsl(178, 58%, 26%);
+  }    
+}

@@ -1,0 +1,38 @@
+/* =====================
+content elements
+===================== */
+
+blockquote {
+    display: block;
+    position: relative;    
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px 0;
+    color: #666;        
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: justify;
+    /*background: #fff;    
+    border-left: 15px solid hsl(0,0%,75%);*/
+
+    &:before {
+        content: "\201C";
+        position: absolute;
+        left: 10px;
+        top:5px;    
+        font-family: Georgia, serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: #999;
+    }
+    cite {
+        color: #999999;
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+    
+        &:before {
+            content: "\2014 \2009";
+        }
+    }    
+}

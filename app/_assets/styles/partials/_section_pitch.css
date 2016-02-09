@@ -1,0 +1,59 @@
+/* =====================
+Pitch
+===================== */
+#section--pitch  {
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: #000 0 0 1rem 0;  
+  /* background: linear-gradient(hsla(150,2%,0%, .95), hsla(150,2%,10%, .8)), url(../img/bg/polygon.png); */
+  background: url(../img/bg/blank03.jpg) center center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  
+  .section__content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+    font-size: 1.6em;
+    background: linear-gradient(hsla(150,2%,0%, .85), hsla(150,2%,10%, .82)), url(../img/bg_cover01.jpg) center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;    
+  }
+  .section__content__wrapper {
+    vertical-align: middle;
+  }
+}
+
+#section--pitch .content__head {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: hsl(0,90%,100%);
+  
+    font-weight: 700;
+    font-size: 2.6em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    
+  
+  span {
+    white-space: normal;
+  }
+  .experience {
+    margin-bottom: .25em;
+    
+    i {
+      font-family: 'Amatic SC', cursive;
+    }
+  }
+  .design {
+    color: #858885;
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
+    font-family: 'Amatic SC', cursive;
+  }
+}

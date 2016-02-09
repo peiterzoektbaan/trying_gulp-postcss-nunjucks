@@ -6,3 +6,12 @@ $background-color: #7db9e8;
 /* Partials */
 @import "partials/normalize";
 @import "partials/layout";
+
+@import "partials/elements";
+@import "partials/nav";
+@import "partials/section_pitch";
+@import "partials/section_head";
+@import "partials/section_heart";
+@import "partials/section_hands";
+@import "partials/section_quotes";
+@import "partials/section_contact";
