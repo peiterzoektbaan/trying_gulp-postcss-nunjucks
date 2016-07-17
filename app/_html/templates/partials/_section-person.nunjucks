@@ -1,0 +1,22 @@
+{# section--person.nunjucks #}
+
+<section id="section--person" class="section" role="region">
+  <h1 class="section__title">{{ page.index.content.personality.header }}</h1>
+  <div class="section__content">
+      <div class="content__row">
+          <div class="content__block">
+              <h2 class="content__head">
+                {{ page.index.content.personality.header }} <span>{{ page.index.content.personality.type.header }}</span>
+              </h2>
+
+              {% for block in page.index.content.personality.type.blocks %}
+                  {% import 'macros/_personality.nunjucks' as makeblocks %}
+                  {{ makeblocks.block( block ) }}
+              {% endfor %}
+          
+              <p class="content__text content__text--comment">shamelessly stolen from <a class="link--out" href="https://www.16personalities.com"><span>16personalities.com</span></a></p>
+            
+          </div>
+      </div>    
+  </div>
+</section>

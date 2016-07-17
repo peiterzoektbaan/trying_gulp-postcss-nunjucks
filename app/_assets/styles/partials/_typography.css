@@ -1,0 +1,72 @@
+html {
+    color: $txt-color;
+    font-family: $txt-font;   
+    font-size: $font-size-px-base;
+}
+
+#splash { 
+  font-size: 2.75vw;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+#content--main { font-size: 1rem } 
+
+.section__title {
+    text-indent: -10000px; 
+    color: transparent;
+}
+
+.content__head {
+  font-weight: 700;
+  font-size: $font-size-lg;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  color: $header-color;
+  text-transform: uppercase;
+  font-family: $header-font;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: $font-size-md;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: $header-font;
+}
+
+.content__text,
+.content__list {
+  font-size: $font-size-md;
+}
+
+
+/* > 480px */ 
+@media only screen and (min-width: 480px) { 
+  #section--contact a {
+    font-size: 2em;
+  }    
+}
+
+/* > 640px */ 
+@media only screen and (min-width: 640px) { 
+  #section--contact a {
+    font-size: 2.25em;
+  }  
+}
+
+/* > 800px */ 
+@media only screen and (min-width: 800px) { 
+  #section--contact a {
+    font-size: 2.5em;
+  }  
+}
+
+/* > 1600 */ 
+@media only screen and (min-width: 1600px) { 
+  #splash { 
+    font-size: 1.5rem;
+  }
+}
+
+

@@ -1,0 +1,17 @@
+{# section--stack.nunjucks #}
+
+<section id="section--pitch" role="region">
+  <h1>For hire!</h1>
+  <div class="section__content">
+    <div class="content__row">
+        <h2>
+          <span>Enthousiastic <strong>Creator</strong></span>          
+          <span>Open-minded <strong>Conceptual Thinker</strong></span>          
+          <span>No-nonsense <strong>UX evangelist</strong></span>          
+          <span>Pragmatic <strong>All-round Web Developer</strong></span>          
+          <span>with a splash of <strong>Pirate...!</strong></span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,36 +1,299 @@
 {
   "site": {
-    "title": "Gulp/Postcss/Nunjucks Test",
-    "description": "",
-    "keywords": "",
+    "title": "Pieter Zoekt Baan",
+    "description": "Enthousiastic Creator, Open-minded Conceptual Thinker, No-nonsense UX evangelist, Pragmatic All-round Web Developer, and a splash of Pirate...! Furthermore... Be excellent to each other. And... PARTY ON, DUDES!",
+    "keywords": "Front-end, Developer, Usex Experience, Design",
     "logo": "",
     "robot": ""
   },
   "page": {
     "index": {
       "url": "index.html",
-      "title": "My Gulp/Postcss/Nunjucks Testpage",
+      "title": "Pieter Zoekt Baan",
       "content": {
-        "quotes": [
+        "head": {
+          "header": "Head",
+          "blocks": [
             {
-                "txt": "I avoid that bleak first hour of the working day during which my still sluggish senses and body make every chore a penance. I find that in arriving later, the work which I do perform is of a much higher quality.",
-                "author": "Ignatius J. Reilly"
-            },{
-                "txt": "[…] death, destruction, anarchy, progress, ambition, and self-improvement were to be Piers' new fate. And a vicious fate it was to be: now he was faced with the perversion of having to GO TO WORK.",
-                "author": "Ignatius J. Reilly"
+              "header": "Bachelor Applied Science",
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "IQ :", 
+                    "122"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Working memory :",
+                    "124"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Inquisitive",
+                    "Conceptual",
+                    "Technical"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Broad-minded",
+                    "Approachable",
+                    "Eager to learn"
+                  ]
+                }                
+              ]
             }
-        ],
-        "lists": [
+          ]
+        },
+        "hands": {
+          "header": "Hands",
+          "blocks": [
             {
-                "type": "ul",
-                "class": "list",
-                "items": [
-                    "Gulp",
-                    "PostCSS",
-                    "Nunjucks"
-                ]
+              "header": "$dev.Stack",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "HTML5, CSS3",
+                    "Object-Oriented",
+                    "Javascript, jQuery",
+                    "SVG",
+                    "Sass, Less, PostCss"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "KnockoutJS",
+                    "NodeJS/npm",
+                    "Gulp"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    ".NET",
+                    "JAVA",
+                    "PHP"                    
+                  ]
+                }
+              ]
+            },
+            {
+              "header": "$dev.tools",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Visual Studio, Netbeans, Eclipse"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "SVN, GitHub, Team Foundation",
+                    "Chrome Dev tools"
+                  ]
+                },                
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Photoshop",
+                    "Illustrator",
+                    "Balsamiq"
+                  ]
+                }
+              ]
+            }            
+          ]
+        },
+        "heart": {
+          "header": "Heart",
+          "blocks": [
+            {
+              "header": "Driving forces",            
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Creativity",
+                    "Innovation",
+                    "Variation",
+                    "Diversity"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Personal development",
+                    "Brainstorming",                    
+                    "Conceptualizing"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Cooperating",
+                    "Sharing",
+                    "Creating"
+                  ]
+                }                
+              ]
+            },
+            {
+              "header": "Hobby's",
+              "lists": [
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Drawing",
+                    "Reading",
+                    "Creating"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline",
+                  "items": [
+                    "Movies",
+                    "TV Series",
+                    "Documentaries"
+                  ]
+                },
+                {
+                  "type": "ul",
+                  "class": "content__list content__list--inline content__list--padded",
+                  "items": [
+                    "Sport shooting",
+                    "Krav Maga"                    
+                  ]
+                }
+              ]
+            }       
+          ]
+        },
+        "personality": {
+          "header": "Personality",
+          "type": {
+            "header": "INFP-A",            
+            "blocks": [
+              {  
+                "area": "Mind",
+                "type": "Introverted",
+                "score": "48%",
+                "text": "Observant individuals are highly practical, pragmatic and down-to-earth. They tend to have strong habits and focus on what is happening or has already happened."
+              },
+              {
+                "area": "Energy",
+                "type": "Intuitive",
+                "score": "73%",
+                "text": "Intuitive individuals are very imaginative, open-minded and curious. They prefer novelty over stability and focus on hidden meanings and future possibilities."
+              },
+              {
+                "area": "Nature",
+                "type": "Feeling",
+                "score": "39%",
+                "text": "Feeling individuals are sensitive and emotionally expressive. They are more empathic and less competitive than Thinking types, and focus on social harmony and cooperation."
+              },
+              {
+                "area": "Tactics",
+                "type": "Prospecting",
+                "score": "77%",
+                "text": "Prospecting individuals are very good at improvising and spotting opportunities. They tend to be flexible, relaxed nonconformists who prefer keeping their options open."
+              },
+              {
+                "area": "Identity",
+                "type": "Assertive",
+                "score": "73%",
+                "text": "Assertive individuals are self-assured, even-tempered and resistant to stress. They refuse to worry too much and do not push themselves too hard when it comes to achieving goals." 
+              }
+            ]
+          }
+        },
+        "contact": {
+          "header": "Contact"
+        },
+        "inspirational": {
+          "header": "Inspirational quotes",
+          "quotes": [
+			{
+				"quote": "Real wisdom is the ability to understand the incredible extent to which you bullshit yourself every single moment of every day.",
+				"author": "Brad Warner"
+			}
+          ]
+        },
+        "tools": {
+          "header": "Helpers",
+          "base": [
+            {
+              "name": "Gulp",
+              "class": "gulp",
+              "title": "Gulp",
+              "url": "http://gulpjs.com/"
+            },          
+            {
+              "name": "NodeJS",
+              "class": "nodejs",
+              "title": "NodeJS",
+              "url": "https://nodejs.org"
+            },
+            {
+              "name": "PostCSS",
+              "class": "postcss",
+              "title": "PostCSS",
+              "url": "https://github.com/postcss/postcss"
+            },
+            {
+              "name": "Nunjucks",
+              "class": "nunjucks",
+              "title": "Nunjucks",
+              "url": "https://mozilla.github.io/nunjucks/"
             }
-        ]        
+          ],
+          "helpers": [
+            {
+              "name": "GitHub",
+              "class": "github",
+              "title": "GitHub",
+              "url": "https://github.com"
+            },
+            {
+              "name": "Notepad++",
+              "class": "notepad",
+              "title": "Notepad++",
+              "url": "https://notepad-plus-plus.org/"
+            },
+            {
+              "name": "the Black Angels",
+              "class": "blackangels",
+              "title": "Listen to the Black Angels",
+              "url": "https://www.youtube.com/watch?v=_7otchKcH-0"
+            }
+          ]       
+        },
+        "footer": {
+
+        }
       }
     }
   }

@@ -1,0 +1,51 @@
+/* =====================
+Personality
+===================== */
+#section--person {  
+  .section__content {
+    @mixin background-image $person-bg-img, center center, 130% auto, no-repeat; 
+  }
+  .content__head {
+    color:  #000 /* $person-head-color */;
+	span {
+		color: $person-head-color;
+	}
+  }
+  
+  h3 {
+    font-size: 1em;
+    line-height: 1em; 
+    margin-bottom: .5em;
+    span {
+      margin-right: .5em;
+    }
+    .header--area {
+      color: $white-text-color;
+      background-color: $color-black;
+      margin-right: .15em;
+      padding: 0 .25em;
+    }
+    .header--type {
+      color: $white-text-color;
+      background-color: $person-head-color;
+      padding: 0 .25em;
+    }
+    .header--score {
+      
+    }    
+  }
+  
+  .content__text--comment {
+    color: $comment-text-color;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;   
+  }
+  .link--out {
+    color: $comment-text-color;
+    text-decoration: none;
+    span {
+      text-decoration: underline;
+    }
+  }
+}

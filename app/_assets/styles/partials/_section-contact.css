@@ -1,0 +1,88 @@
+/* ====================5
+Contact
+===================== */
+#section--contact {
+  
+  .section__content {
+    padding: 1em 1.25em;
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+    min-height: 60vh;
+    text-align: center;    
+    @mixin background-image $contact-bg-img, top center, 120% auto, no-repeat;
+  }
+
+  .content__row {
+    margin: 0 auto;
+  }
+  .content__block {
+    padding: .5em 1em;
+    background: none;
+    border: none;
+    box-shadow: none;
+    transform: skewY(-10deg);
+  }
+
+  .block--link {
+    margin: 1.5em auto;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    padding: .5em .4em .5em .4em;
+    color: $white-text-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.75em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Oswald',sans-serif;
+    background: $contact-color;
+    text-shadow: 0 .1em 0 hsla(0,0%,0%, .3);    
+    border: 2px solid hsla(0,0%,10%, .7);  
+    border-bottom-width: .2em;
+    
+    &:hover,
+    &:focus {
+      padding: .5em .4em .5em .4em;
+      background: color($contact-color l(50%));
+      border-bottom-color: hsla(0,0%,10%, .7);
+    }
+    &:active {
+      padding: .6em .4em .4em .4em;
+      background: $contact-color;
+      border-color:$color-black;
+      border-top-width: .2em;
+      border-bottom-width: 2px;
+      text-shadow: 0 -.1em 0 hsla(0,0%,0%, .3);
+    }
+
+    &.link--cv {
+      background: $contact-link1-bg;
+      &:hover,
+      &:focus {
+        background: color($contact-link1-bg h(+30));
+      }
+      &:active {
+        background: $contact-color;
+      }
+    }
+    &.link--mail {
+      background: $contact-link2-bg;
+      &:hover,
+      &:focus {
+        background: color($contact-link2-bg h(-30));
+      }
+      &:active {
+        background: $contact-color;
+      }
+    }  
+
+
+    
+  }
+}

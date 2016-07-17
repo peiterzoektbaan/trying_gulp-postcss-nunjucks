@@ -1,4 +1,13 @@
 {# header.nunjucks #}
-<header id="header" role="header">    
-    <h1>{{ page.index.title }}</h1> 
-</header>   
+
+  <header id="header" role="header">    
+    <nav id="nav--main">
+      <ul>
+        <li><a data-scroll href="#section--head" rel="section--head">&nbsp;</a></li>
+        <li><a data-scroll href="#section--hands" rel="section--hands">&nbsp;</a></li>
+        <li><a data-scroll href="#section--heart" rel="section--heart">&nbsp;</a></li>
+        <li><a data-scroll href="#section--person" rel="section--person">&nbsp;</a></li>
+        <li><a data-scroll href="#section--contact" rel="section--contact">&nbsp;</a></li>
+      </ul>
+    </nav>    
+  </header>   

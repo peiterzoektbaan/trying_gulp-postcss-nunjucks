@@ -1,0 +1,10 @@
+{% macro block( blockobject = {} ) %}
+
+{%if blockobject %}   
+
+    <h3><span class="header--area">{{ blockobject.area }}</span><span class="header--type">{{ blockobject.type }}</span><span class="header--score">{{ blockobject.score }}</span></h3>	
+    <p class="content__text">{{ blockobject.text }}</p>
+  
+{% endif %}  
+  
+{% endmacro %}

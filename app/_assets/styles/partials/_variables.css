@@ -1,0 +1,98 @@
+/* Variables */
+$background-color:    hsl(232,1%,88%); /*hsl(232,1%,18%);*/
+
+$color-black:         hsl(232,1%,18%);
+$color-white:          hsl(0, 0%, 100%);
+
+
+$header-color:        hsl(178, 58%, 26%);
+$header-color-dark:   hsl(60, 2%, 21%);
+$header-font:         'Oswald', sans-serif;
+$header-font-alt:     'Amatic SC', cursive;
+
+$txt-color:           hsl(150, 2%, 20%);
+$txt-font:            'IM Fell DW Pica SC', serif;
+
+$html-bg-img:         url(../img/bg_blank-dark.jpg);
+$section-bg-img:      url(../img/bg_blank-dark.jpg);
+
+$font-size-px-base:  16px;
+$font-size-px-med:   18px;
+$font-size-px-lrg:   20px;
+
+$font-size-sm:        .8em;
+$font-size-md:        1em;
+$font-size-md2:       1.4em;
+$font-size-lg:        2.0em;
+$font-size-xl:        2.4em;
+$font-size-xxl:       3.0em;
+
+
+$bg-color:            hsl(0,0%,100%);
+$section-bg-gradient: linear-gradient(0deg, color($bg-color a(50%)) -10%, color($bg-color a(30%)));
+
+
+$white-text-color:    hsl(40,60%,98%);
+$black-text-color:    hsl(160,3%,20%);
+$comment-text-color:  color($black-text-color l(60%));
+
+$head-color:          hsl(200,70%,40%);
+$hands-color:         hsl(140,70%,40%);
+$heart-color:         hsl(10, 70%,50%);
+$person-color:        hsl(50, 70%,50%);
+$contact-color:       hsl(240, 1%, 68%);
+$quotes-color:        hsl(339, 15%, 65%);
+
+
+$section-bg-color:         $color-white;
+$section-active-bg-color:  color($color-white l(-15));
+
+/* Section variables - pitch */
+$pitch-bg-color:      hsla(0,0%,10%, .9);
+$pitch-bg-img:        url(../img/bg_cover-white-1.png);
+$pitch-bg-img-port:   url(../img/bg_cover-white-1.png);
+$pitch-menu-link-bg:  hsla(0,0%,7%, .5);
+
+
+/* Section variables - head */
+$head-bg-img:             url(../img/bg_brain-section-l.png);
+$head-bg-img-port:        url(../img/bg_brain-section-p.png);
+$head-menu-link-bg:       $head-color;
+$head-head-color:         $color-black;
+
+/* Section variables - hands */
+$hands-bg-img:            url(../img/bg_hand-section-l.png);
+$hands-bg-img-port:       url(../img/bg_hand-section-p.png);
+$hands-menu-link-bg:      $hands-color;
+$hands-head-color:        $color-black; 
+
+/* Section variables - heart */
+$heart-bg-img:            url(../img/bg_heart-section-l.png);
+$heart-bg-img-port:       url(../img/bg_heart-section-p.png);
+$heart-menu-link-bg:      $heart-color;
+$heart-head-color:        $color-black;
+
+/* Section variables - person */
+$person-bg-img:           url(../img/bg_person-section-l.png);
+$person-bg-img-port:      url(../img/bg_person-section-l.png);
+$person-menu-link-bg:     $person-color;
+$person-head-color:       color($person-color s(-10%));
+
+
+/* Section variables - tools */
+$tools-bg-color:          $color-white;
+
+/* Section variables - contact */
+$contact-bg-img:           url(../img/scene_grey.png);
+$contact-bg-img-port:      url(../img/scene_grey.png);
+$contact-menu-link-bg:    $contact-color;
+$contact-link1-bg:        $hands-color;
+$contact-link2-bg:        $head-color;
+
+
+/* Section variables - quotes */
+$quotes-bg-color:         $color-black;
+$quotes-bg-img:           url(../img/bg_cover-white-5.png);
+  
+$quotes-head-bg:          color($quotes-color a(25%));
+$quotes-head-color:       hsla(260,50%,50%,.25);  

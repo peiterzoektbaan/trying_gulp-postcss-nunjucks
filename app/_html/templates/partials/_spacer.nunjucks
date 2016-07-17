@@ -1,0 +1,5 @@
+{# spacer.nunjucks #}
+
+<div class="spacer">
+  &nbsp;
+</div>  

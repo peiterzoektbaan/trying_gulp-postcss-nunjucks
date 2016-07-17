@@ -1,0 +1,200 @@
+(function() {
+
+  var $document = $(document)
+  var $window, $body, $splash, $header
+  var $sectionIntro, $sectionType, $sectionStack, $sectionGoals, $sectionContact
+  
+  function initVariables() {
+    // page elements
+    $window = $(window)
+    $body = $('html, body')
+    $splash = $('#splash')
+    $header = $('header')
+
+    //sections
+    $sectionPitch = $('#section--pitch')
+    $sectionHead = $('#section--head')    
+    $sectionHeart = $('#section--heart')
+    $sectionHands = $('#section--hands')
+    $sectionPerson = $('#section--person')
+    $sectionContact = $('#section--contact')
+  }
+
+  //
+  // initOnScroll
+  var contentSections;
+  function initOnScroll(){
+    contentSections = $('#content--main').find('.section');
+    
+    $document.on('scroll', onScroll);
+
+    $('#header').on('click', 'a[href^="#"]',function (e) {
+      e.preventDefault();
+      $document.off('scroll');
+
+      $('a').each(function () {
+        $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+
+      var target = this.hash, offset;      
+      $target = $(target);
+
+      if (target == '#section--pitch') {
+        offset = 0
+      } else {
+        offset = $target.offset().top
+      }      
+      
+      $body.stop().animate({
+        'scrollTop': offset
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+        $document.on('scroll', onScroll);
+      });
+    });
+  }
+
+  //
+  // OnScroll
+  function onScroll(event){
+    
+    // Toevoegen.........
+    // on scroll each section check position in viewport and add/remove class
+    // if top > 50% vh and bottom < 50% activate link    
+    
+    
+    // var scrollPosition = $document.scrollTop();
+    // var splashOffset = $(splash).height() - $(header).height();    
+    
+    // contentSections.each(function () {
+        // var wHeight = $(window).height(),
+            // offsetTop = $(window).height() * 0.6,
+            // offsetBottom = $(window).height() * 0.2,
+            // posTop = $(this).position().top + splashOffset,            
+            // a = false;
+           
+        // if (posTop - offsetTop <= scrollPosition) {
+          // var height = $(this).height(),
+              // posBottom = posTop + height;
+          
+          // if (posBottom > scrollPosition) {
+            // $(this).not('.active').addClass('active');
+          // } else {
+            // $(this).removeClass('active');
+          // }
+        // } else {
+          // $(this).removeClass('active');
+        // } 
+        
+        // if ( posTop - 20 <= scrollPosition && posBottom > scrollPosition ) {
+          // $('#header').find('a[href="#' + $(this).attr('id') + '"]').not('.active').addClass('active');
+        // } else {
+          // $('#header').find('a[href="#' + $(this).attr('id') + '"]').removeClass('active');
+        // } 
+
+        
+    // });
+    
+    
+    // $('nav a').each(function () {
+      // var currentLink = $(this);
+      // var refElement = $(currentLink.attr('href'));
+      
+      // if ( (refElement.position().top + splashOffset <= scrollPosition) && (refElement.position().top + refElement.height() + splashOffset > scrollPosition)) {
+        // $('nav ul li a').removeClass('active');
+        // currentLink.addClass('active');
+      // }
+      // else{
+        // currentLink.removeClass('active');
+      // }
+    // });
+
+    var moveSplash;
+    if ( scrollPosition < (splashOffset * 1.5) ) {
+      moveSplash = (scrollPosition / 1.5);
+      $('#section--pitch .section__content__wrapper').animate({top:  moveSplash}, {duration: 0, easing: 'linear'});
+    }
+  }
+
+  //
+  // Waypoints
+  
+ 
+  function initWaypoints() {
+    waypointSections = $('#content--main').find('.section');
+    
+    new Waypoint.Sticky({
+      element: $header[0]
+    });   
+        
+    function waypointHandlerDown(elem, direction) {
+      $('#' + elem.element.id).addClass('active');
+    }    
+    function waypointHandlerUp(elem, direction) {
+      $('#' + elem.element.id).addClass('active');
+    }
+
+    waypointSections.each(function( i, section ) {
+  
+      new Waypoint({
+        element: section,
+        handler: function(direction) {
+          if (direction === 'down') {
+            waypointHandlerDown(this, direction)
+          }
+        },
+        continuous: false,
+        group: 'sections',      
+        offset: '75%'
+      });  
+      
+      new Waypoint({
+        element: section,
+        handler: function(direction) {
+          if (direction === 'up') {
+            waypointHandlerUp(this, direction)
+          }
+        },    
+        continuous: false,
+        group: 'sections',      
+        offset: '-100%'         
+      });
+      
+      new Waypoint({
+        element: section,
+        handler: waypointHandler,
+        continuous: false,
+        group: 'sections',
+        offset: '15%'
+      })          
+      
+    })
+  }
+
+  //
+  // Google analytics
+  // function initGA () {
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'UA-2947158-4']);
+    // _gaq.push(['_trackPageview']);
+
+    // (function () {
+      // var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      // var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+  // };
+
+
+  $(function() {
+    initVariables()
+    //initGA();
+  })
+
+  $(window).on('load', function() {
+    //initOnScroll()
+    initWaypoints()
+  })
+
+})();

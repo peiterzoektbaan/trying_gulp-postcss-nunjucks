@@ -1,0 +1,147 @@
+/* =====================
+Nav
+===================== */
+/* This class is added on scroll */
+
+header {
+    display: block;
+    position: fixed;  
+    top: -4em;
+    left: 0;
+    right: 0;
+    width: inherit;
+    max-width: inherit;
+    height: 4em;
+    margin: 0 auto;
+    transition: top 400ms ease-in-out;    
+    z-index: 5;
+}
+header.fixed {
+    top: 0;
+    transition: top 400ms ease-in-out;
+}
+
+nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2.25em;
+  margin: -1.5em auto 0 auto;
+  /* background: color($color-black a(50%)); */
+}
+
+nav ul {
+  display: table;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+nav li {
+  display: table-cell;
+  height: inherit;
+  padding: 0;
+  vertical-align: middle;
+  &.to--pitch {
+    display: none;    
+    position: absolute;
+    left: 0;
+  }
+}
+header.stuck nav li.to--pitch {
+  display: table-cell;
+}
+
+nav li a {
+  background-color: $color-black;
+  
+  &,
+  &:hover,
+  &:visited,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }  
+}
+header.stuck nav li a {
+  background-color: color($txt-color a(30%));
+  transition: background-color 300ms ease-out;  
+}
+
+nav li:not(.to--pitch) a {
+  display: block;
+  height: 3em;
+  width: 3em;
+  margin: 0 .25em;
+  border-radius: 0 100% 100% 100%;
+  transform: rotate(-90deg); 
+  transition: background-color 300ms ease-out, transform 550ms ease-out;
+
+  &:hover {
+    outline: 0;
+    transform: rotate(-135deg);
+    transition: background-color 300ms ease-in, transform 300ms ease-in;
+  }
+  &.active {
+    outline: 0;
+    transform: rotate(45deg);
+    transition: background-color 300ms ease-in, transform 400ms ease-in;
+  }
+}
+
+nav li.to--pitch a {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: .25rem .25rem;
+  border-radius: 0 100% 100% 100%;
+  transition: background-color 300ms ease-out;
+
+  &:hover {
+    outline: 0;
+    transition: background-color 300ms ease-in;
+  }
+  &.active {
+    outline: 0;
+    transition: background-color 300ms ease-in;
+  }  
+}
+
+nav li a { 
+  &,
+  &:hover,
+  &:visited,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }  
+  
+  &[href="#section--head"] {
+    &:hover, &:focus   { background-color: color($head-menu-link-bg b(+40%)) }
+    &.active, &:active { background-color: $head-menu-link-bg }
+  }
+  &[href="#section--heart"] {
+    &:hover, &:focus   { background-color: color($heart-menu-link-bg b(+40%)) }
+    &.active, &:active { background-color: $heart-menu-link-bg }
+  }
+  &[href="#section--hands"] {
+    &:hover, &:focus   { background-color: color($hands-menu-link-bg b(+40%)) }
+    &.active, &:active { background-color: $hands-menu-link-bg }
+  }
+  &[href="#section--person"] {
+    &:hover, &:focus   { background-color: color($person-menu-link-bg b(+40%)) }
+    &.active, &:active { background-color: $person-menu-link-bg }
+  }
+  &[href="#section--contact"] {
+    &:hover, &:focus   { background-color: color($contact-menu-link-bg b(+40%)) }
+    &.active, &:active { background-color: $contact-menu-link-bg }
+  }
+}
+
+
+
+
+
+
+
+ 

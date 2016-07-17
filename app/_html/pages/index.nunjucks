@@ -8,44 +8,50 @@
   {% endblock %}
 
   {% block styles %}
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" /> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css" />
+    
     <link rel="stylesheet" type="text/css" href="{{ csspath }}main{%if env == 'production' %}.min{% endif %}.css" />
     <link rel="canonical" href="{{ sitepath }}" />
   {% endblock %}
 {# /HEAD ================================= #}
 
 {# CONTENT =============================== #}  
+  {% block splash %}
+    {% include "partials/_section-pitch.nunjucks" %}
+  {%- endblock %}
+
   {% block header %}
     {% include "partials/_header.nunjucks" %}
   {%- endblock %}
     
-  {% block content %}  
-    <div id="content">
-        <section class="section" role="region">
-            <div class="section__header">
-                {% if page.index.content.header %}
-                    <h1>{{ page.index.content.header }}</h1>
-                {% endif %}
-            </div>
-            <div class="section__content">            
-                {% for quote in page.index.content.quotes %}
-                    <blockquote>
-                        {{ quote.txt }}
-                        <cite>{{ quote.author }}</cite>
-                    </blockquote>                
-                {% endfor %}                            
-            </div>
-        </section>
-    </div>
+  {% block contentmain %}
+    {% include "partials/_section-head.nunjucks" %}  
+    {% include "partials/_section-hands.nunjucks" %}
+    {% include "partials/_section-heart.nunjucks" %}    
+    {% include "partials/_section-person.nunjucks" %}
+    {% include "partials/_section-contact.nunjucks" %}        
   {%- endblock %}
 {# /CONTENT ============================== #}
   
 {# FOOTER ================================ #}
   {% block footer %}  
-    {% include "partials/_footer.nunjucks" %}  
+    {% include "partials/_section-tools.nunjucks" %}  
+    {% include "partials/_footer.nunjucks" %}
   {%- endblock %}
 {# /FOOTER =============================== #}
 
 {% block bodyjs %}
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>  
+    {#
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"/></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/sticky.min.js"></script>
+    #}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
+   
     <script src="{{ jspath }}main{%if env == 'production' %}.min{% endif %}.js"></script>
 {% endblock %}

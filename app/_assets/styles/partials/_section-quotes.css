@@ -1,0 +1,83 @@
+/* =====================
+Quotes
+===================== */
+#section--quote {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 0;
+  background: color($color-black a(.8)); /* $quotes-bg-color; */
+  &::after {
+    display: none;
+  }
+  
+  .section__content {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 1280px;
+      min-height: initial;
+  }
+  .content__row {
+    margin: 0;
+  }
+
+  .content__block {
+    display: block;
+    padding: 0 0 1em 0;
+    text-align: center;
+    background: none;
+    box-shadow: 0 0 0 hsla(0, 0%, 0%, 0); 
+  }
+  
+  blockquote {
+    display: inline-block;
+    position: relative;    
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1em 2.5em;
+    color: hsl(240, 1%, 60%);
+    text-align: justify;
+    font-size: $font-size-md;
+    font-weight: 400;
+    /* @mixin background-image $quotes-bg-img, left .5em, auto 9em, no-repeat; */
+
+    span {
+      display: block;
+      position: relative;
+      text-align: center;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: -0.2em;
+        font-family: Georgia, serif;
+        font-size: $font-size-xxl;
+        font-weight: 400;
+        color: hsl(334, 10%, 50%);
+      }      
+      &:before {
+        content: "\201C";
+        left: -.5em;
+      }
+      &:after {
+        content: "\201D";
+        right: -.5em;
+      }
+    }
+    cite {
+        display: block;
+        margin-top: 5px;      
+        color: hsl(334, 10%, 50%);
+        font-size: $font-size-sm;
+        text-align: center;
+    
+        &:before {
+            content: "\2014 \2009";
+        }
+        &:after {
+            content: "\2009 \2014";
+        }
+    }
+  }    
+}

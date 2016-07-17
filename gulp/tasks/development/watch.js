@@ -6,5 +6,4 @@ gulp.task('watch', ['build'], function() {
   gulp.watch(config.styles, ['styles']);
   gulp.watch(config.scripts, ['scripts']);
   gulp.watch(config.images, ['images']);
-  gulp.watch(config.html, ['htmltidy']);   
 });

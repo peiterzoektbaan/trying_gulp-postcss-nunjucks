@@ -54,30 +54,26 @@ module.exports = {
         }
     },
     scripts: {
-        src:  srcAssets + '/scripts/*.js',
-        dest: developmentAssets + '/js',
-        options: {}
+        main: {
+            src:  srcAssets + '/scripts/*.js',
+            dest: developmentAssets + '/js',
+            options: {}
+        },        
+        vendor: {
+            src:  [
+                srcAssets + '/scripts/vendor/jquery-2.2.0.js',
+                srcAssets + '/scripts/vendor/jquery.waypoints.js',
+                srcAssets + '/scripts/vendor/jquery.waypoints.sticky.js',
+                srcAssets + '/scripts/vendor/jquery.waypoints.inview.js',
+                srcAssets + '/scripts/vendor/*.js'
+            ], 
+            dest: developmentAssets + '/js'
+        }
     },
     images: {
         src:  srcAssets + '/images/**/*',
         dest: developmentAssets + '/img',
         options: {}
-    },
-    // Cleanup heml code    
-    htmltidy: {
-        src:  build + '/**/*.html',
-        dest: build,
-        options: {
-            doctype: 'html5',
-            hideComments: true,
-            indent: true,
-            clean: true,
-            indentSpaces: 2,
-            wrap: 0,
-            mergeDivs: false,
-            mergeEmphasis: false,
-            mergeSpans: false
-        }
     },
     // Watch for changes    
     watch: {

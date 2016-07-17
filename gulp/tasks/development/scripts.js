@@ -13,11 +13,22 @@ function onError (err) {
 }    
 
 /* Bundle js files */
- gulp.task('scripts', function() {
-  return gulp.src(config.src)
+ gulp.task('scripts:main', function() {
+  return gulp.src(config.main.src)
     .pipe(plumber({
       errorHandler: onError
     }))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.main.dest));
 });
+
+gulp.task('scripts:vendor', function() {
+  return gulp.src(config.vendor.src)
+    .pipe(plumber({
+      errorHandler: onError
+    }))
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest(config.vendor.dest));
+});
+
+gulp.task('scripts', ['scripts:main', 'scripts:vendor']);

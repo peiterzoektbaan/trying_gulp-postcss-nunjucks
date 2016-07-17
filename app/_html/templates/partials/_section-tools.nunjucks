@@ -1,0 +1,29 @@
+{# tools.nunjucks #}
+<section id="section--tools" class="section" role="region">
+  <h1 class="section__title">{{ page.index.content.tools.header }}</h1>        
+  <div class="section__content">
+    <div class="content__row">
+      <div class="content__block">
+        <h2 class="content__head">
+          Build with...
+        </h2>
+        <ul class="content__list content__list--inline">
+          {% for tool in page.index.content.tools.base %}
+              <li class="{{ tool.class }}">
+                  <a href="{{ tool.url }}" target="_blank" title="{{ tool.title }}"><img src="assets/img/logos/logo-{{ tool.class }}.png" alt="{{ tool.name }}" title="{{ tool.title }}" /></a>
+              </li>
+          {% endfor %}
+        </ul>
+        
+        <ul class="content__list content__list--inline">
+          {% for tool in page.index.content.tools.helpers %}
+              <li class="{{ tool.class }}">
+                  <a href="{{ tool.url }}" target="_blank" title="{{ tool.title }}"><img src="assets/img/logos/logo-{{ tool.class }}.png" alt="{{ tool.name }}" title="{{ tool.title }}" /></a>
+              </li>
+          {% endfor %}
+        </ul>         
+
+      </div>
+    </div>
+  </div>    
+</section>

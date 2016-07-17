@@ -1,0 +1,175 @@
+/* =====================
+Responsive text, paddings and margins
+By adjusting the font-size change the base em size of the content,
+which in turn effects all the em based values of nested objects.
+===================== */
+
+.content__row {
+  margin-left: .5em;
+  margin-right: 1em;
+}
+
+/* > 480px */
+@media only screen and (min-width: 480px) {
+	nav ul {
+		margin: 0 0 0 auto;
+	}  
+	.section .section__content {
+		padding: 3.5em 0 4.75em 0;
+	}   	
+	.content__list--inline li {
+		white-space: nowrap;
+	}
+}
+
+/* > 640px */
+@media only screen and (min-width: 640px) {
+	.section {
+		margin: 0 auto;
+	}    
+	#section--contact .content__block {
+		padding: 1em 4em;
+	}
+	.content__row {  
+		margin-left: 1em;
+		margin-right: 1em;
+	}      
+	.content__block {  
+		padding: 1.5em 1.75em 1em 1.5em;
+	}
+}
+
+/* > 800px */
+@media only screen and (min-width: 800px) {
+  .section {
+    margin: 0 auto;
+  }  
+  #section--pitch .content__row {
+    display: block;
+    position: relative;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .section .section__content {
+    padding: 5em 0 5.75em 0;
+
+    .content__row {
+	  margin-left: 3em;
+      margin-right: 4.75em;
+    }
+    .content__block {
+      padding: 1.5em 3.25em 1em 1.5em;
+    }
+  }  
+  
+  #section--quote blockquote span:before {
+    left: -.75em;
+  }
+  #section--quote blockquote span:after {
+    right: -.75em;
+  }
+}
+
+/* > 1024px */
+@media only screen and (min-width: 1024px) {
+  #content--main .section__content,
+  #section--tools .section__content,
+  #section--quote .section__content,
+  footer .footer__content {
+    width: 90%;
+    margin: 0 auto; 
+  }
+  #section--contact a {
+    padding: .5em 1em .5em 1em;
+    
+    &:hover,
+    &:focus {
+      padding: .5em 1em .5em 1em;        
+    }
+    &:active {
+      padding: .6em 1em .4em 1em;
+    }
+  }
+}
+
+/* > 1280px */
+@media only screen and (min-width: 1280px) {
+  #content--main .section__content,
+  #section--tools .section__content,
+  #section--quote .section__content,
+  footer .footer__content {
+    width: 85%;
+    margin: 0 auto; 
+  }
+  .section .section__content {
+    padding: 6em 0 6.75em 0;
+  }
+}
+
+/* > 1600 */
+@media only screen and (min-width: 1600px) {
+}
+
+
+
+/* pitch font size */
+/* > 480px */ 
+@media only screen and (min-width: 480px) { 
+  #splash { 
+    font-size: 2vw;
+  }    
+}
+
+/* > 640px */ 
+@media only screen and (min-width: 640px) { 
+  #splash { 
+    font-size: 1.75vw;
+  }  
+}
+
+/* > 800px */ 
+@media only screen and (min-width: 800px) { 
+  #splash { 
+    font-size: 1.5vw;
+    word-break: normal;
+    word-wrap: normal;     
+  }
+}
+
+/* > 1600 */ 
+@media only screen and (min-width: 1600px) { 
+  #splash { 
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* backgrounds */
+@media only screen and (orientation: portrait) and (max-width: 799px) {
+  #section--head .section__content    { background-image: $head-bg-img-port; background-position: center center; background-size: 130% auto;}
+  #section--hands .section__content   { background-image: $hands-bg-img-port; background-position: center center; background-size: 130% auto; }
+  #section--heart .section__content   { background-image: $heart-bg-img-port; background-position: center center; background-size: 130% auto; }  
+  #section--person .section__content  { background-image: $person-bg-img-port; background-position: center center; background-size: 130% auto; }  
+  #section--contact .section__content { background-position: top center; background-size: auto 130%; }
+}
+@media only screen and (orientation: portrait) and (max-width: 479px) {
+  #section--head .section__content    { background-position: center center; background-size: auto 130%; }
+  #section--hands .section__content   { background-position: center center; background-size: auto 130%; }
+  #section--heart .section__content   { background-position: center center; background-size: auto 130%; }  
+  #section--person .section__content  { background-position: center center; background-size: auto 130%; }
+  #section--contact .section__content { background-position: top center; background-size: auto 130%; }
+}
+
+@media only screen and (orientation: landscape) {
+  /* #section--pitch .section__content::after { background-size: auto 90%; background-position: center; } */
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1023px) {
+  /* #section--pitch .section__content::after { background-size: 100% auto; }  */
+}
+
+

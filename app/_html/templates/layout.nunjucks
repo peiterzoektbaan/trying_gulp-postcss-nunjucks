@@ -12,12 +12,17 @@
     {% block styles %} {% endblock %}
 </head>
 <body>
-    <div class="wrapper">
-        {% block header %} {% endblock %}
-        {% block content %} {% endblock %}
-        {% block footer %} {% endblock %}
-    </div>
+      <section id="splash" class="wrapper">
+          {% block splash %} {% endblock %}
+      </section>
 
+      <div id="content" class="wrapper">
+          <section id="content--main" class="wrapper">
+              {% block header %} {% endblock %}
+              {% block contentmain %} {% endblock %}
+          </section>
+          {% block footer %} {% endblock %}
+      </div>
     {% block bodyjs %} {% endblock %}
 </body>
 </html>

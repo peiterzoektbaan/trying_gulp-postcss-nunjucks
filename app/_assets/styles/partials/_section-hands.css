@@ -1,0 +1,11 @@
+/* =====================
+Hands
+===================== */
+#section--hands {  
+  .section__content {
+    @mixin background-image $hands-bg-img, center center, 130% auto, no-repeat; 
+  }
+  .content__head {
+    color: $hands-head-color;
+  }
+}

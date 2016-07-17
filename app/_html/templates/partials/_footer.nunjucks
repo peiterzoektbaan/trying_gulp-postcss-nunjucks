@@ -1,9 +1,7 @@
 {# footer.nunjucks #}
 <footer id="footer" role="footer">
     <div class="footer__content">
-        {% for list in page.index.content.lists %}
-            {% import 'macros/_list.nunjucks' as makelist %}
-            {{ makelist.list( list )}}
-        {% endfor %}      
+      <p class="content__text">
+        all original content © 2016 pieterzoektbaan,<br/>all rights reserved</p>
     </div>
 </footer>

@@ -1,0 +1,55 @@
+/* =====================
+Mixins
+===================== */
+
+@define-mixin background-image $background, $position, $size, $repeat {
+  background: $background;
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;  
+} 
+
+@define-mixin background-image-gradient $gradient, $image, $position, $size, $repeat {
+  background: $gradient, $image;
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;  
+} 
+
+@define-mixin font-size $sizeValue: 12 {
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+@define-mixin line-height $heightValue: 12 {
+    line-height: $heightValue + px; //fallback for old browsers
+    line-height: (0.125 * $heightValue) + rem;
+}
+
+
+/*
+@define-mixin icon $network, $color {
+    .button.$(network) {
+        background-image: url('img/$(network).png');
+        background-color: $color;
+    }
+} 
+@mixin icon twitter, blue; 
+@mixin icon youtube, red;
+*/
+
+/*
+@define-mixin icon $network, $color {
+    .button.$(network) {
+        background-image: url('img/$(network).png');
+        background-color: $color;
+        @mixin-content;
+    }
+}
+@mixin icon twitter, blue {
+    width: 3rem;
+} 
+@mixin icon youtube, red {
+    width: 4rem;
+}
+*/

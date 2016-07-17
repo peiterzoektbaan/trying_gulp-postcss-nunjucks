@@ -1,0 +1,17 @@
+{# section--contact.nunjucks #}
+
+<section id="section--contact" class="section" role="region">
+  <h1 class="section__title">{{ page.index.content.contact.header }}</h1>
+  <div class="section__content">
+    <div class="content__row">
+      <div class="content__block">
+        <div class="block--link">
+          <a class="link--block link--cv" href="assets\CV_PieterZoektBaan.pdf" ref="nofollow" target="_blank"><span>view curriculum vitae</span></a>
+        </div>
+         <div class="block--link">
+          <a class="link--block link--mail" href="&#109;a&#105;l&#116;&#111;:&#112;&#105;&#101;&#116;&#101;&#114;&#64;&#112;&#105;&#101;&#116;&#101;&#114;&#122;&#111;&#101;&#107;&#116;&#98;&#97;&#97;&#110;&#46;&#110;&#108;?Subject=Vacature" ref="nofollow"><span>mail job oppertunity</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  

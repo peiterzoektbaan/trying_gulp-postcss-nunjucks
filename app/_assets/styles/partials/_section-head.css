@@ -1,0 +1,11 @@
+/* =====================
+Head
+===================== */
+#section--head { 
+  .section__content {
+    @mixin background-image $head-bg-img, center center, 130% auto, no-repeat;
+  }
+  .content__head {
+    color: $head-head-color;
+  }    
+}

@@ -1,0 +1,11 @@
+/* =====================
+Heart
+===================== */
+#section--heart { 
+  .section__content {
+    @mixin background-image $heart-bg-img, center center, 130% auto, no-repeat;
+  }
+  .content__head {
+    color: $heart-head-color;
+  } 
+}
