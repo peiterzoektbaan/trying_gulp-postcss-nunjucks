@@ -35,6 +35,17 @@ h3 {
   font-family: $header-font;
 }
 
+a:link { 
+  color: $txt-color;
+  font-family: $txt-font;
+  text-decoration: none;  
+}
+a:hover { 
+  color: $comment-text-color;
+  text-decoration: underline;  
+}
+
+
 .content__text,
 .content__list {
   font-size: $font-size-md;

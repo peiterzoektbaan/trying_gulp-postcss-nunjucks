@@ -1,7 +1,12 @@
 {# footer.nunjucks #}
 <footer id="footer" role="footer">
     <div class="footer__content">
-      <p class="content__text">
-        all original content © 2016 pieterzoektbaan,<br/>all rights reserved</p>
+	  <p class="content__text content__text--links">
+        <a href="&#109;a&#105;l&#116;&#111;:&#112;&#105;&#101;&#116;&#101;&#114;&#64;&#112;&#105;&#101;&#116;&#101;&#114;&#122;&#111;&#101;&#107;&#116;&#98;&#97;&#97;&#110;&#46;&#110;&#108;?Subject=Vacature" ref="nofollow" class="link link--contact" title="Get in Touch"><i class="fa fa-envelope fa-lg"></i><span>Get in Touch</span></a>
+		<a href="assets\cv_pieterzoektbaan[nl-en].zip" ref="nofollow" class="link link--cv" title="Download CV"><i class="fa fa-file-text fa-lg"></i><span>Download CV</span></a>
+		<a href="https://github.com/pieterzoektbaan/website" class="link link--github" target="_blank" title="View on GitHub"><i class="fa fa-github fa-lg"></i><span>View on GitHub</span></a>
+		<a href="https://www.flickr.com/photos/rrrr030/" class="link link--flickr" target="_blank" title="Flickr"><i class="fa fa-flickr fa-lg"></i><span>Flickr</span></a>
+	  </p>
+      <p class="content__text">all original content © 2016 pieterzoektbaan, all rights reserved</p>
     </div>
 </footer>

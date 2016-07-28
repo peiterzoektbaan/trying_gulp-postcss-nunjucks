@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css" />
     
     <link rel="stylesheet" type="text/css" href="{{ csspath }}main{%if env == 'production' %}.min{% endif %}.css" />
+	<script src="https://use.fortawesome.com/83ac6be1.js"></script>	
     <link rel="canonical" href="{{ sitepath }}" />
   {% endblock %}
 {# /HEAD ================================= #}
@@ -43,12 +44,6 @@
 {# /FOOTER =============================== #}
 
 {% block bodyjs %}
-    {#
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"/></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/shortcuts/sticky.min.js"></script>
-    #}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>

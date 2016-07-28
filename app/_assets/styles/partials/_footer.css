@@ -17,10 +17,44 @@ footer {
   text-align: center;
   
   .content__text  {
-      display: inline-block;
+      display: block;
       margin: 0;
       padding: .5em 0;
-      font-size: 1em;
-      color: $color-white;
+      font-size: .8em;
+      color: $comment-text-color;
   }
+  .content__text--links {
+	  margin-bottom: 2.5em;
+  }
+  
+  .link {
+	  display: inline-block;
+	  padding: .5em .75em;
+	  border-radius: .25em;
+	  margin: 0 .5em .5em .5em;
+  }
+  .link:hover {
+	  background: $comment-text-color;
+	  .fa {
+		  color: $color-black;
+	  }
+  }
+  .link .fa,
+  .link span {
+	color: $color-white;
+	line-height: 1.5em;
+	vertical-align: middle;
+	font-size: $font-size-md2;
+  }  
+  .link .fa {
+	color: $comment-text-color;
+    vertical-align: top;
+	margin-right: .25em;
+  }  
+  .link span {
+	display: inline-block;
+	font-family: $header-font;
+  }
+
+
 }
